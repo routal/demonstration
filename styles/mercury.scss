@@ -1,0 +1,116 @@
+.mercury {
+
+    &__filters {
+        height: 44px;
+        display: flex;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    &__filters-buttons {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: minmax(auto, 217px) minmax(auto, 274px);
+    }
+
+    &__filters-container {
+        min-height: 44px;
+    }
+
+    &__filters-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        &.fixed {
+            position: fixed;
+            top: 100px;
+            background: var(--color-2);
+            z-index: 1;
+        }
+    }
+
+    &__header {
+        padding: 5px 15px;
+        border-radius: 8px 8px 0 0;
+        border-bottom: 1px solid var(--color-13);
+        display: grid;
+        align-items: center;
+        grid-template-columns: 30px 140px 260px 130px 165px 200px 164px 170px;
+        grid-gap: 20px;
+        height: 35px;
+        background: #fff;
+
+        &.fixed {
+            position: fixed;
+            top: 168px;
+            z-index: 1;
+        }
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: 30px 140px 260px 130px 165px 200px 164px 170px;
+        grid-gap: 20px;
+        align-items: center;
+        background: #fff;
+        padding: 5px 15px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__update {
+        padding-top: 12px;
+        display: grid;
+        grid-gap: 24px;
+        grid-template-columns: minmax(auto, 193px) minmax(auto, 220px)  minmax(auto, 220px);
+        align-items: center;
+    }
+
+    &__textarea {
+        border: 1px solid var(--color-13);
+        border-radius: 8px;
+        padding: 10px;
+        resize: none;
+        width: 100%;
+    }
+
+    &__update-failed {
+        background: rgba(237, 20, 91, 0.1);
+        border-radius: 8px;
+        padding: 12px 10px;
+        text-align: center;
+        color: #ED145B;
+        font-size: 14px;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    &__senders {
+        min-width: 173px;
+        max-width: 173px;
+        width: 100%;
+    }
+
+    &__statuses {
+        min-width: 141px;
+        max-width: 141px;
+        width: 100%;
+    }
+
+    &__date-picker {
+        min-width: 256px;
+        max-width: 256px;
+        width: 100%;
+    }
+
+    &__search {
+        min-width: 223px;
+        max-width: 223px;
+        width: 100%;
+    }
+}
